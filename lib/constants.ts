@@ -26,8 +26,8 @@ export const MODELS = [
     hidden: true,
   },
   {
-    label: "Llama 3.3 70B",
-    value: "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    label: "GLM 4 70B",
+    value: "zai-org/GLM-4-70B",
     hidden: true,
   },
 ];
@@ -61,7 +61,7 @@ export const SUGGESTED_PROMPTS = [
   {
     title: "Flashcard app",
     description:
-      "Build me a flashcard app about llamas. Have some flash cards and also have the ability for users to add their own. Show one side of a card at first and reveal the answer on button click, keeping track of correct guesses to measure progress.",
+      "Build me a flashcard app about AI. Have some flash cards and also have the ability for users to add their own. Show one side of a card at first and reveal the answer on button click, keeping track of correct guesses to measure progress.",
   },
   {
     title: "Timezone dashboard",

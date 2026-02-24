@@ -103,13 +103,12 @@ export default function Home() {
         <div className="mt-10 flex grow flex-col items-center px-4 lg:mt-16">
           <a
             className="mb-4 inline-flex shrink-0 items-center rounded-full border-[0.5px] border-[#BABABA] px-3.5 py-1.5 text-xs text-black transition-shadow"
-            href="https://togetherai.link/?utm_source=llamacoder&utm_medium=referral&utm_campaign=example-app"
+            href="https://manah.ai"
             target="_blank"
           >
             <span className="text-center">
-              Powered by <span className="font-semibold">Together AI</span>.
-              Used by
-              <span className="font-semibold"> 1.1M+ users. </span>
+              Powered by <span className="font-semibold">Manah AI</span>.
+              AI Development Platform.
             </span>
           </a>
 
@@ -447,21 +446,7 @@ const Footer = memo(() => {
     <footer className="flex w-full flex-col items-center justify-between space-y-3 px-5 pb-3 pt-5 text-center sm:flex-row sm:pt-2">
       <div>
         <div className="font-medium">
-          Built with{" "}
-          <a
-            href="https://togetherai.link/?utm_source=llamacoder&utm_medium=referral&utm_campaign=example-app"
-            className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
-          >
-            Llama
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://togetherai.link/?utm_source=llamacoder&utm_medium=referral&utm_campaign=example-app"
-            className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
-          >
-            Together AI
-          </a>
-          .
+          © 2026 Manah AI. All rights reserved.
         </div>
       </div>
       <div className="flex items-center gap-4 pb-4 sm:pb-0">
@@ -483,7 +468,7 @@ const Footer = memo(() => {
           </svg>
         </Link>
         <Link
-          href="https://github.com/Nutlope/llamacoder"
+          href="https://github.com/appfast-codev/llamacoder"
           className="group"
           aria-label=""
         >
