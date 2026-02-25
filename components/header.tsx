@@ -10,19 +10,6 @@ function Header() {
       <Link href="/" className="flex flex-row items-center gap-3">
         <span className="text-lg font-bold text-gray-900">Manah AI</span>
       </Link>
-
-      <div className="absolute right-3">
-        <a
-          href="https://github.com/appfast-codev/llamacoder"
-          target="_blank"
-          className="ml-auto hidden items-center gap-3 rounded-xl border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-700 sm:flex"
-        >
-          <GithubIcon className="h-[18px] w-[18px]" />
-          <div className="flex items-center gap-1.5">
-            <span className="font-semibold text-gray-900">6k stars</span>
-          </div>
-        </a>
-      </div>
     </header>
   );
 }
