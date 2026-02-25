@@ -116,3 +116,96 @@
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
+/* Orbital animations */
+@keyframes orbit-1 {
+  from {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    transform-origin: 0 0;
+  }
+}
+
+@keyframes orbit-2 {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform-origin: 0 0;
+  }
+}
+
+@keyframes orbit-3 {
+  from {
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
+    transform-origin: 0 0;
+  }
+}
+
+@keyframes orbit-2-1 {
+  from {
+    transform: rotate(45deg) translateX(100px) rotate(-45deg);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(405deg) translateX(100px) rotate(-405deg);
+    transform-origin: 0 0;
+  }
+}
+
+@keyframes orbit-2-2 {
+  from {
+    transform: rotate(180deg) translateX(170px) rotate(-180deg);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(540deg) translateX(170px) rotate(-540deg);
+    transform-origin: 0 0;
+  }
+}
+
+@layer components {
+  .animate-orbit-1 {
+    animation: orbit-1 15s linear infinite;
+    transform-origin: 400px 300px;
+  }
+
+  .animate-orbit-2 {
+    animation: orbit-2 20s linear infinite;
+    transform-origin: 400px 300px;
+  }
+
+  .animate-orbit-3 {
+    animation: orbit-3 25s linear infinite;
+    transform-origin: 400px 300px;
+  }
+
+  .animate-orbit-2-1 {
+    animation: orbit-2-1 18s linear infinite;
+    transform-origin: 900px 500px;
+  }
+
+  .animate-orbit-2-2 {
+    animation: orbit-2-2 22s linear infinite;
+    transform-origin: 900px 500px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-1,
+  .animate-orbit-2,
+  .animate-orbit-3,
+  .animate-orbit-2-1,
+  .animate-orbit-2-2 {
+    animation: none;
+  }
+}
