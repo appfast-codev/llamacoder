@@ -6,10 +6,11 @@ import ArrowRightIcon from "@/components/icons/arrow-right";
 import LightningBoltIcon from "@/components/icons/lightning-bolt";
 import LoadingButton from "@/components/loading-button";
 import Spinner from "@/components/spinner";
-import { PlanetsBackground } from "@/components/planets-background";
+import bgImg from "@/public/halo.png";
 import * as Select from "@radix-ui/react-select";
 import assert from "assert";
 import { CheckIcon, ChevronDownIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -87,7 +88,14 @@ export default function Home() {
 
   return (
     <div className="relative flex grow flex-col">
-      <PlanetsBackground />
+      <div className="absolute inset-0 flex justify-center">
+        <Image
+          src={bgImg}
+          alt=""
+          className="max-h-[953px] w-full max-w-[1200px] object-cover object-top mix-blend-screen"
+          priority
+        />
+      </div>
 
       <div className="isolate flex h-full grow flex-col">
         <Header />
